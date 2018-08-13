@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_margin="8dp"
+  android:background="@color/colorWhite"
+  app:cardCornerRadius="5dp">
+
+  <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+      android:id="@+id/item_image"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_margin="10dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/item_text_title"
+      android:textStyle="bold"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:ellipsize="end"
+      android:maxLines="2"
+      android:textSize="22sp"
+      app:layout_constraintLeft_toRightOf="@+id/item_image"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="Ini Title" />
+
+    <TextView
+      android:id="@+id/item_desc"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="10dp"
+      android:layout_marginBottom="10dp"
+      android:layout_marginTop="5dp"
+      android:ellipsize="end"
+      android:maxLines="2"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="@+id/item_text_title"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/item_text_title"
+      tools:text="@string/app_name" />
+
+  </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

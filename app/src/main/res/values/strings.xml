@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">retroKotlin</string>
+  <string name="caption_ok">oke</string>
+
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="caption_enable_lite">Mau Pake Lite Mode gak, kalo pake ntar gambarnya ilang
+  sendiri</string>
+</resources>
